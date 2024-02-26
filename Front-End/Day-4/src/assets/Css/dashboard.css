@@ -1,0 +1,145 @@
+/* profile.css */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600&display=swap');
+
+.profile-container {
+  background-color: #253237;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+.profile-card {
+  width: 400px;
+  height: 600px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,1);
+  border-radius: 4px;
+  overflow: hidden; 
+  transition: box-shadow 0.5s ease-in-out;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.profile-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.gradient-container {
+  background-color: aliceblue ;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  height: 120px;
+  width: 120px;
+  margin-top: -60px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.info-row p {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.info-row-data {
+  position: absolute;
+  flex-grow: 1;
+  display: flex;
+  margin-left: 60px;
+}
+
+.info-row-data p {
+  word-wrap: break-word;
+}
+
+.profile-bottom {
+  background-color: aliceblue;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-bottom-btn {
+  height: 40px;
+  width: 50%;
+  border-radius: 20px;
+  border: none;
+  background-color: orangered;
+  transition: background-color 0.6s ease-in-out;
+}
+
+.profile-bottom-btn:hover{
+  background-color: red;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translatey(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+/* Dashboard.css */
+.dashboard-container {
+    width: 100%;
+    max-width: 800px; /* Adjust width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    background-color: #ddd;
+}
